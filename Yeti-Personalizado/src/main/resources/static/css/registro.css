@@ -1,0 +1,171 @@
+#main {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: auto;
+    
+}
+
+#fRegistro {
+    grid-column: 4/10;
+    margin-bottom: 3.5rem;
+    margin-top: 0.5rem;
+    width: auto;
+    height: 90%;
+    text-align: justify;
+    background-color: #E9E9E9;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
+}
+
+.info {
+    margin-top: 1rem;
+}
+
+#password{
+    position: relative;
+    }
+    
+    #togglePassword{
+        position: absolute;
+        top: 30%;
+        margin-left: 95%;
+    }
+
+#passwordRpt{
+    position: relative;
+    }
+        
+#togglePasswordRpt{
+    position: absolute;
+    top: 30%;
+    margin-left: 95%;
+    }
+
+@media (max-width: 1030px){
+
+    #togglePasswordRpt{
+        margin-left: 93%;
+        }
+    
+    #togglePassword{
+        margin-left: 93%;
+        }
+    }
+
+@media (max-width: 800px){
+    #fRegistro {
+        background-color: #E9E9E9;
+        border-radius: 10px;
+        grid-column: 2/12;
+        grid-row: 2;
+        padding: 1rem 2rem 1rem 2rem;
+        margin-bottom: 5rem;
+        align-content: center;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{
+        margin-top: 0.3rem;
+        width: 30rem;
+    }
+
+    #togglePasswordRpt{
+        margin-left: 94%;
+        }
+
+    #togglePassword{
+        margin-left: 94%;
+        }
+}
+
+
+@media (max-width: 430px){
+#fRegistro {
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    grid-column: 1/13;
+    grid-row: 2;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-bottom: 5rem;
+    align-content: center;
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    margin-top: 0.3rem;
+    width: 22rem;
+}
+
+#togglePasswordRpt{
+    margin-left: 92%;
+    }
+
+#togglePassword{
+    margin-left: 92%;
+    }
+}
+
+@media (max-width: 380px){
+    #fRegistro {
+        background-color: #E9E9E9;
+        border-radius: 10px;
+        grid-column: 1/13;
+        grid-row: 2;
+        padding: 1rem 2rem 1rem 2rem;
+        margin-bottom: 5rem;
+        align-content: center;
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info{
+        margin-top: 0.3rem;
+        width: 18rem;
+    }
+
+    #togglePassword{
+        margin-left: 90%;
+    }
+
+    #togglePasswordRpt{
+        margin-left: 90%;
+    }
+    }
+
+@media (max-width: 325px){
+    #fRegistro {
+        background-color: #E9E9E9;
+        border-radius: 10px;
+        grid-column: 1/13;
+        grid-row: 2;
+        padding: 1rem 2rem 1rem 2rem;
+        margin-bottom: 5rem;
+        align-content: center;
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info{
+        margin-top: 0.3rem;
+        width: 15rem;
+    }
+
+    #togglePassword{
+        margin-left: 89%;
+    }
+    
+    #togglePasswordRpt{
+        margin-left: 89%;
+    }
+    }

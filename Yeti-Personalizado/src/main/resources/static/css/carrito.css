@@ -1,0 +1,160 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carritoSeccion{
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgb(194, 194, 194);
+    align-items: center;
+    border-radius: 10px;
+}
+#prodCarrito{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+.cardProduct{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 16rem;
+    background-color: white;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-right: 2rem;
+    align-items: flex-start;
+    margin-top: -2rem;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+}
+
+#cartTitle{
+    font-size: 3rem;
+}
+.imgCarrito{
+    width:20%;
+    padding-left: 1rem;
+    padding-top: 1%;
+}
+
+.cardParts{
+    width: 20%;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+#btnBorrarCarrito{
+    margin-right: 1rem;
+}
+
+#btnPagar{
+    margin-left: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#buttons {
+    display: inline-block;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 425px){
+    #carritoSeccion{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .cardProduct{
+        display: flex;
+        height: 38rem;
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+    .imgCarrito{
+        width: 60%;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        padding-top: 0%;
+      
+    }
+    .cardParts{
+        width: 50%;
+        margin: 0;
+        text-align: center;
+    }
+
+    #buttons {
+        display: flex;
+        margin-bottom: 4rem;
+        margin-top: 1.5rem;
+    }
+
+    #btnBorrarCarrito{
+        margin-right: 0.5rem;
+    }
+    
+    #btnPagar{
+        margin-left: 0.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+@media(max-width:770px) {
+    .btnBorrarProducto{
+        margin-top: 0;
+        }
+    .cardProduct{
+        padding-right: 0;
+    }
+    .imgCarrito{
+        padding-top: 10%;
+    }
+}
+
+@media (min-width: 1100px){
+    .btnBorrarProducto{
+        margin-top: 0;
+    }
+    .imgCarrito{
+        width:12%;
+    }
+    .cardProduct{
+        padding-right: 1rem;
+    }
+    .cardParts{
+        font-size: 1rem;
+    }
+    .txt{
+        font-size: 1.5rem;
+    }
+    .btnBorrarProducto{
+        margin-top: 3.5rem;
+    }
+    .imgCarrito{
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 2000px){
+    .imgCarrito{
+        width:10%;
+    }
+    .cardProduct{
+        padding-right: 1rem;
+    }
+    .imgCarrito{
+        padding-top: 1%;
+    }
+}

@@ -1,0 +1,406 @@
+* {
+    font-family: "Rajdhani";
+}
+
+/* CONTAINER STYLE */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0%;
+}
+
+#sectionAll{
+    width: 100%;
+}
+
+/*FLIP CARD EFFECT*/
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 0 10px #363636;
+    perspective: 1000px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.imgIntegrants {
+    width: 60%;
+    height: auto;
+}
+.developersEffect {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .developersEffect{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-color: rgb(29, 38, 64, 1);
+    color: #ffff;
+}
+
+.back{
+    background-color: #5188A9;
+    color: #ffff;
+    transform: rotateY(180deg);
+    text-align: center;
+        padding: 0.5rem;
+}
+
+/* MEDIA-QUERIES */
+
+/* DESKTOP */
+@media (min-width: 800px) {
+    .container-fluid> #integrants{
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+        width: fit-content;
+    }
+    .sectionAboutUs {
+        height: 57rem;
+        width: 100%;
+        font-size: 1.5em;
+    
+        background-image: url("/src/aboutUs/foto.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        }
+        .center {
+            height: 57rem;
+            width: 100%;
+        
+            background-image: url("/src/aboutUs/backgroundPic.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+           
+        }
+        
+        
+        .msnAboutUs {
+            width: 68rem;
+            height: 30rem;
+            margin: 0px auto;
+        
+            background-color: aliceblue;
+            background: rgba(255, 255, 255, 0.7);
+        
+            border-radius: 50px;
+            align-items: center;
+            padding: 100px;
+            justify-content: center;
+        
+        }
+        
+        .frase {
+            font-family: "Rajdhani";
+            /*  Rajdhani */
+            color: #043454;
+            font-size: 2.5rem;
+            text-align: center;
+            padding-top: 4rem;
+        }
+        
+        .opacityTxt {
+            width: 66rem;
+            height: 11rem;
+            margin: 0px auto;
+        
+            border-color: #848483;
+            background-color: rgba(132, 132, 131, 0.5);
+            color: #1C243C;
+        
+            border-radius: 25px;
+        
+            font-family: "Rajdhani";
+            /*  Rajdhani */
+            font-size: 2.5rem;
+            text-align: center;
+        
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: center;
+        }
+    
+        #contMision{
+            margin-bottom: 7rem;
+        }
+        
+        #mision {
+            font-size: 1.25rem;
+            text-align: justify;
+            padding-top: 5px;
+            text-align: justify;
+        
+        }
+        
+        #vision {
+            font-size: 1.25rem;
+            text-align: justify;
+            padding-top: 5px;
+            text-align: justify;
+        }
+}
+
+/* LAPTOP 1024 */
+@media (max-width: 1025px){
+    .msnAboutUs {
+        width: 40rem;
+        padding: 50px;
+    }
+
+    .opacityTxt {
+        width: 42rem;
+        padding: 20px;
+        height: 15rem;
+    }
+    
+}
+
+/* TABLET */
+@media (max-width: 785px) {
+    .container-fluid> #integrants{
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        width: fit-content;
+    }
+    .sectionAboutUs {
+        width: 100%;
+        height: 25rem;
+        font-size: 1em;
+    
+        background-image: url("/src/aboutUs/foto.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+        }
+        .center {
+            height: 23rem;
+            width: 100%;
+        
+            background-image: url("/src/aboutUs/backgroundPic.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
+        
+        .msnAboutUs {
+            width: 41rem;
+            height: 18rem;
+        
+            background-color: aliceblue;
+            background: rgba(255, 255, 255, 0.7);
+        
+            border-radius: 50px;
+            align-items: center;
+            justify-content: center;
+            padding: 100px;
+        }
+        
+        .frase {
+            font-family: "Rajdhani";
+            /*  Rajdhani */
+            color: #043454;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        
+        .opacityTxt {
+            width: 40rem;
+            height: 7rem;
+            margin: 0px auto;
+        
+            border-color: #848483;
+            background-color: rgba(132, 132, 131, 0.5);
+            color: #1C243C;
+        
+            border-radius: 25px;
+        
+            font-family: "Rajdhani";
+            /*  Rajdhani */
+            font-size: 1.5rem;
+            text-align: center;
+        
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: center;
+        }
+        
+        #mision {
+            font-size: .75rem;
+            text-align: justify;
+            padding-top: 5px;
+            text-align: justify;
+        
+        }
+        
+        #vision {
+            font-size: 0.75rem;
+            text-align: justify;
+            padding-top: 5px;
+            text-align: justify;
+        }
+}
+
+/* MOVIL PHONE */
+@media (max-width: 430px) {
+    .container-fluid> #integrants{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        width: fit-content;
+    }
+
+    .flip-card{
+        width: 14rem;
+        height: 13rem;
+    }
+
+    .back > p{
+        font-size: smaller;
+    }
+
+    #ldkin{
+        width: 2rem;
+    }
+
+    .sectionAboutUs {
+        width: 100%;
+        height: 17rem;
+        font-size: 1em;
+    
+        background-image: url("/src/aboutUs/foto2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -25px;
+        margin-bottom: 15px;
+
+        }
+        .center {
+            width: 100%;
+            height: 17rem;
+        
+            background-image: url("/src/aboutUs/backgroundPic2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+      
+        }
+        
+        
+        .msnAboutUs {
+            width: 18.5rem;
+            height: 9rem;
+        
+            background-color: aliceblue;
+            background: rgba(255, 255, 255, 0.7);
+        
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        
+        .frase {
+            font-family: "Rajdhani";
+            /*  Rajdhani */
+            color: #043454;
+            font-size: .8rem;
+            text-align: center;
+        }
+        
+        .opacityTxt {
+            width: 18.5rem;
+            height: 7rem;
+            margin: 0px auto;
+        
+            border-color: #848483;
+            background-color: rgba(132, 132, 131, 0.5);
+            color: #1C243C;
+        
+            border-radius: 25px;
+        
+            font-family: "Rajdhani";
+            /*  Rajdhani */
+            font-weight: bold;
+            font-size: .9rem;
+            text-align: center;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #mision {
+            font-size: .65rem;
+            font-weight: bold;
+            text-align: justify;
+            padding-top: 1px;
+            text-align: justify;
+        
+        }
+        
+        #vision {
+            font-size: .65rem;
+            font-weight: bold;
+            text-align: justify;
+            padding-top: 1px;
+            text-align: justify;
+        }
+}
