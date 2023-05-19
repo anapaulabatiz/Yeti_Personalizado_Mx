@@ -136,22 +136,7 @@ btnSend.addEventListener("click", function (event) {
 
   // JSON
   if (isValid) {
-	  
-	datos = JSON.parse(localStorage.getItem("datos"));
-    id = (datos[datos.length-1].id);
-    id++;
-    let nuevoProducto = `{
-                "id": ${id},
-                "nombre": "${nameTxt.value}",
-                "descripcion": "${descripcion.value}",
-                "precio": ${precio.value},
-                "categoria": "${categoria.value}",
-                "imagen": "${inputFile.value}",
-    }`;
-    
-    datos.push(JSON.parse(nuevoProducto));
-    localStorage.setItem("datos", JSON.stringify(datos));
-    
+
 	let usuarioLogin;
 	usuarioLogin = JSON.parse(sessionStorage.getItem("usuarioLogin"));
     let elemento = {
