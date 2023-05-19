@@ -15,14 +15,14 @@ public class YetiPersonalizadoApplication {
 		SpringApplication.run(YetiPersonalizadoApplication.class, args);
 	} // main
 	
-//	@Bean
-//	public FilterRegistrationBean<JwtFilter> jwtFilter() {
-//		FilterRegistrationBean<JwtFilter> registrationBean =
-//				new FilterRegistrationBean<>();
-//		registrationBean.setFilter(new JwtFilter());
-//		registrationBean.addUrlPatterns("/producto/*");
-//		registrationBean.addUrlPatterns("/usuario/*");
-//		return registrationBean;
-//	}
+	@Bean
+	public FilterRegistrationBean<JwtFilter> jwtFilter() {
+		FilterRegistrationBean<JwtFilter> registrationBean =
+				new FilterRegistrationBean<>();
+		registrationBean.setFilter(new JwtFilter());
+		registrationBean.addUrlPatterns("/producto/*");
+		registrationBean.addUrlPatterns("/usuario/*");
+		return registrationBean;
+	}
 
 } // class YetiPersonalizadoApplication

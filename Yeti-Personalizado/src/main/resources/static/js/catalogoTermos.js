@@ -69,7 +69,7 @@ function mostrarProducto(datos) {
 
     let card = `
             <div class="card cardProduct" style="width: 18rem;">
-                <img src="${datos[i].imagen}" class="card-img-top" alt="...">
+                <img src="${datos[i].imagen}" class="card-img-top" alt="..." style="padding-top: 2rem">
                 <div class="card-body">
                 <h5 class="card-title">${datos[i].nombre}</h5>
                 <p class="card-text descriptionCard">${datos[i].descripcion.slice(0, 60
