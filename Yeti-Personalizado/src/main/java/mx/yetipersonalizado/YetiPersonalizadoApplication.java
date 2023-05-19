@@ -14,7 +14,7 @@ public class YetiPersonalizadoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(YetiPersonalizadoApplication.class, args);
 	} // main
-	
+//	
 //	@Bean
 //	public FilterRegistrationBean<JwtFilter> jwtFilter() {
 //		FilterRegistrationBean<JwtFilter> registrationBean =
